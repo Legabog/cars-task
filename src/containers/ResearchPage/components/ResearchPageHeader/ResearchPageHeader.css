@@ -1,0 +1,11 @@
+.research-page-header-wrapper {
+  display: flex;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 5px 8px -9px #000;
+}
+
+.research-page-header {
+  display: flex;  
+  width: 100%;
+}

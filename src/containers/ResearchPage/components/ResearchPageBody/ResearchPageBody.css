@@ -1,0 +1,85 @@
+.research-page-body-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: Segoe UI;
+  font-style: normal;
+}
+
+.research-page-body {
+  width: 100%;
+}
+
+.research-page-body__title {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.research-page-body__title > h1 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 120%;
+  color: #002033;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.research-page-body__description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  color: gray;
+}
+
+.research-page-body__container {
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+@media only screen  and (max-width:1200px) {
+  .research-page-body__title > h1 {
+    font-size: 36px;
+  }
+}
+
+@media only screen  and (max-width:992px) {
+  .research-page-body__title > h1 {
+    font-size: 32px;
+  }
+  .research-page-body__description > span {
+    font-size: 14px;
+  }
+  
+}
+
+@media only screen  and (max-width:768px) {
+  .research-page-body__title > h1 {
+    font-size: 28px;
+  }
+  .research-page-body__description > span {
+    font-size: 12px;
+  }
+}
+
+@media only screen  and (max-width:480px) {
+  .research-page-body__title > h1 {
+    font-size: 24px;
+  }
+  .research-page-body__description > span {
+    font-size: 12px;
+  }
+}
+
+@media only screen  and (max-width:320px) {
+  .research-page-body__title > h1 {
+    font-size: 20px;
+  }
+  .research-page-body__description > span {
+    font-size: 12px;
+  }
+}

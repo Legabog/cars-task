@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { connect } from "react-redux";
+import { compose } from "redux";
+import { Switch, Route, withRouter } from "react-router-dom";
+import MainPage from "./containers/MainPage/MainPage";
+import ResearchPage from "./containers/ResearchPage/ResearchPage";
+import { ErrorRoute } from "./pres-components";
 
-function App() {
+const App = (props) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Route path={"/"} exact>
+        <MainPage {...props} />
+      </Route>
+      <Route path={"/research"} exact>
+        <ResearchPage {...props} />
+      </Route>
+      <Route>
+        <ErrorRoute />
+      </Route>
+    </Switch>
   );
-}
+};
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    carData: state.appReducer.carData,
+  };
+};
+
+export default compose(withRouter, connect(mapStateToProps, {}))(App);

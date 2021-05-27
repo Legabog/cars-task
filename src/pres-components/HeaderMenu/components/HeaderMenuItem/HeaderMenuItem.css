@@ -1,0 +1,139 @@
+.header-menu__item {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  padding-right: 40px;
+  padding-left: 40px;
+  cursor: pointer;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.header-menu__item_active {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  padding-right: 40px;
+  padding-left: 40px;
+  cursor: pointer;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+  word-wrap: break-word;
+}
+
+.header-menu__item__icon {
+  height: 20px;
+}
+
+.header-menu__item__icon > .MuiSvgIcon-root {
+  color: gray;
+}
+
+.header-menu__item__icon_active {
+  height: 20px;
+}
+
+.header-menu__item__icon_active > .MuiSvgIcon-root {
+  color: #002033;
+} 
+
+.header-menu__item__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+.header-menu__item__text > span {
+  white-space: nowrap;
+  padding-left: 5px;
+  color: rgba(0, 32, 51, 0.6);
+}
+
+.header-menu__item__text_2 {
+  display: none;
+}
+
+.header-menu__item__text_2 > span {
+  white-space: nowrap;
+  padding-left: 5px;
+  color: rgba(0, 32, 51, 0.6);
+}
+
+.header-menu__item__text_active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-menu__item__text_active > span {
+  white-space: nowrap;
+  padding-left: 5px;
+  color: #002033;
+}
+
+.header-menu__item__text_2_active {
+  display: none;
+}
+
+.header-menu__item__text_2_active > span {
+  white-space: nowrap;
+  padding-left: 5px;
+  color: #002033;
+}
+
+.header-menu__item:hover span {
+  color: #002033;
+}
+
+.header-menu__item__underline-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-menu__item__underline {
+  margin-top: -4px;
+  width: 40px;
+  height: 4px;
+  background-color: #0078D2;
+}
+
+@media only screen  and (max-width:650px) {
+  .header-menu__item {
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 14px;
+  }
+  .header-menu__item_active {
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 14px;
+  }
+}
+
+@media only screen  and (max-width:400px) {
+  .header-menu__item__text > span {
+    display: none;
+  }
+  .header-menu__item__text_active > span {
+    display: none;
+  }
+  .header-menu__item__text_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-menu__item__text_2_active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,93 @@
+.main-page-body-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: Segoe UI;
+  font-style: normal;
+}
+
+.main-page-body {
+  width: 100%;
+}
+
+.main-page-body__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.main-page-body__title > h1 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 120%;
+  color: #002033;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main-page-body__description {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-page-body__description > span {
+  font-size: 16px;
+  font-weight: 400;
+  color: gray;
+}
+
+.main-page-body__container {
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+  
+@media only screen  and (max-width:1200px) {
+  .main-page-body__title > h1 {
+    font-size: 36px;
+  }
+
+}
+
+@media only screen  and (max-width:992px) {
+  .main-page-body__title > h1 {
+    font-size: 32px;
+  }
+  .main-page-body__description > span {
+    font-size: 14px;
+  }
+  
+}
+
+@media only screen  and (max-width:768px) {
+  .main-page-body__title > h1 {
+    font-size: 28px;
+  }
+  .main-page-body__description > span {
+    font-size: 12px;
+  }
+}
+
+@media only screen  and (max-width:480px) {
+  .main-page-body__title > h1 {
+    font-size: 24px;
+  }
+  .main-page-body__description > span {
+    font-size: 12px;
+  }
+}
+
+@media only screen  and (max-width:320px) {
+  .main-page-body__title > h1 {
+    font-size: 20px;
+  }
+  .main-page-body__description > span {
+    font-size: 12px;
+  }
+}

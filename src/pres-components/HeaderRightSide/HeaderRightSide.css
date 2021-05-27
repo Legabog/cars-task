@@ -1,0 +1,47 @@
+.header-right-side-wrapper {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  width: 30%;
+}  
+
+.header-right-side {
+  display: flex;
+  align-content: center;
+  justify-content: right;
+}
+
+.header-right-side__button {
+  padding-left: 20px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-right-side__button > span {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding: 0 16px;
+  background-color: #0078D2;
+  border-radius: 4px;
+}
+
+.header-right-side__button > span:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.header-right-side__button > span:active {
+  transform: scale(0.95);
+}
+
+@media only screen  and (max-width:650px) {
+  .header-right-side-wrapper {
+    display: none;
+  }
+}
